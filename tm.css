@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+  font-family: Merriweather, serif;
+  background-color: #121212;
+  color: #BB86FC;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+header h1 {
+  font-family: Lora, sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Centered Task Bar */
+.task-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.2); /* Frosted glass */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.task-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.task-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+
+.task-bar button {
+  padding: 12px;
+  background-color: #03DAC5; /* Green button */
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-bar button:hover {
+  background-color: #84FFFF;
+}
+
+/* Task List Section */
+.task-list-container {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+/* Task Item */
+.task {
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: space-between; /* Align content to both ends */
+  align-items: center; /* Center items vertically */
+  width: 95%; /* Almost full width of the container */
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+
+.task:hover {
+  transform: translateY(-3px);
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #3700B3 /* Primary Varient blue for completed tasks */
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.task-buttons button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  background-color: #ff6b6b; /* Red for delete */
+  transition: opacity 0.3s ease;
+}
+
+.task-buttons button.complete {
+  background-color: #349a22; /* Blue for complete */
+}
+
+.task-buttons button:hover {
+  opacity: 0.8;
+}
+
+.clear-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #dc3545; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clear-button:hover {
+  background-color: #b02a37; /* Darker red for hover */
+}

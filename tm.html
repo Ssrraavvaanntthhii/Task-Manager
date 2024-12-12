@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="tm.css">
+</head>
+<body>
+  <h1>Task Manager</h1>
+  <div class="task-bar">
+    <input type="text" id="taskInput" autofocus placeholder="Enter your task..." />
+    <button id="addTaskButton">Add Task</button>
+  </div>
+
+  <button id="clearTasksButton" class="clear-button">Clear All Tasks</button>
+  
+  <div class="task-list-container">
+    <div id="taskList" class="task-list">
+  </div>
+
+  <script src="tm.js" defer></script>
+</body>
+</html>
