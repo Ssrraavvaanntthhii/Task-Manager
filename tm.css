@@ -2,7 +2,7 @@
 body {
   font-family: Merriweather, serif;
   background-color: #121212;
-  color: #BB86FC;
+  color: #FF0266;
   font-size: 2rem;
   margin: 0;
   padding: 0;
@@ -136,7 +136,7 @@ header h1 {
 .clear-button {
   margin-top: 20px;
   padding: 10px 15px;
-  background-color: #dc3545; /* Red color */
+  background-color: #dc3545;
   color: white;
   border: none;
   border-radius: 5px;
@@ -148,5 +148,79 @@ header h1 {
 }
 
 .clear-button:hover {
-  background-color: #b02a37; /* Darker red for hover */
+  background-color: #b02a37; 
+}
+
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.task-status {
+  text-align: center;
+  font-size: 2rem;
+  color: #BB86FC;
+  font-weight: bold;
+}
+
+.task-controls {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.task-controls button {
+  flex: 1;
+  margin: 0 5px;
+  background-color: #FF7597;
+  color: #121212;
+  font-weight: bold;
+}
+
+.task-controls button:hover {
+  background-color: #84FFFF;
+}
+
+#prioritySelect {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000;
+  font-size: 1rem;
+}
+
+.task span small {
+  font-size: 0.8rem;
+  color: #BB86FC;
+}
+
+.task-list-container {
+  margin-top: 20px;
+}
+
+.clear-button {
+  margin: 0 5px;
+  background-color: #03DAC5;
+  color: #121212;
+  font-weight: bold;
+}
+
+.clear-button:hover {
+  background-color: #84FFFF;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #3700B3;
+}
+
+.task-buttons button.undo {
+  background-color: #ff9800;
+  color: #fff;
 }
