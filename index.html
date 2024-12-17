@@ -9,15 +9,35 @@
 </head>
 <body>
   <h1>Task Manager</h1>
+
+  <!-- Task Input Section -->
   <div class="task-bar">
-    <input type="text" id="taskInput" autofocus placeholder="Enter your task..." />
+    <input type="text" id="taskInput" placeholder="Enter your task..." autofocus />
+    <select id="prioritySelect">
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
     <button id="addTaskButton">Add Task</button>
   </div>
 
-  <button id="clearTasksButton" class="clear-button">Clear All Tasks</button>
-  
+  <!-- Controls Section -->
+  <div class="controls">
+    <!-- Task Status (First Line) -->
+    <div class="task-status">
+      <span id="taskCounter">Tasks: 0 | Completed: 0 | Remaining: 0</span>
+    </div>
+    <!-- Buttons (Second Line) -->
+    <div class="task-controls">
+      <button id="toggleCompleted" class="clear-button">Hide Completed</button>
+      <button id="sortTasksButton" class="clear-button">Sort by Priority</button>
+      <button id="clearTasksButton" class="clear-button">Clear All Tasks</button>
+    </div>
+  </div>
+
+  <!-- Task List -->
   <div class="task-list-container">
-    <div id="taskList" class="task-list">
+    <div id="taskList" class="task-list"></div>
   </div>
 
   <script src="tm.js" defer></script>
